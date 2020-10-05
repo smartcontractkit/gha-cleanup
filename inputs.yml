@@ -1,0 +1,15 @@
+name: "gha-selfhosted-cleanup"
+description: "Keep a cache image up to date"
+inputs:
+  githubRepository:
+    description: "The github repository to operate on"
+    required: true
+  githubToken:
+    description: "This token should have access for modifying and listing github runners respective github repository"
+    required: true
+  dummyRunner:
+    description: 'A "dummy runner" in the context of https://github.com/philips-labs/terraform-aws-github-runner#usages Specifically, "This offline runner will ensure your builds will not fail immediately and stay queued until there is a runner to pick it up."'
+    required: false
+runs:
+  using: "node14"
+  main: "build/index.js"
