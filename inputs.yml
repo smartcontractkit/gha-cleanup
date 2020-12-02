@@ -11,5 +11,5 @@ inputs:
     description: 'A "dummy runner" in the context of https://github.com/philips-labs/terraform-aws-github-runner#usages Specifically, "This offline runner will ensure your builds will not fail immediately and stay queued until there is a runner to pick it up."'
     required: false
 runs:
-  using: "node14"
+  using: "node12"
   main: "build/index.js"

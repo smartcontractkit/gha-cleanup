@@ -8,7 +8,7 @@ This action can be used locally too, for one-off runs or testing. See [./run-exa
 
 # Dependencies
 
-- Node v14
+- Node v12
 - Yarn 1.x
 
 # Building
